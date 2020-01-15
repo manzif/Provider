@@ -1,0 +1,117 @@
+
+.header{
+    /* height: 100vh; */
+    padding-left: 7%;
+    padding-right: 7%;
+    background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.8), rgba(5, 40, 80, 0.8)), url("../assets/image11.jpg");
+    background-size: cover;
+    background-position: bottom;
+    overflow: auto;
+  }
+  #header-top{
+    position: relative;
+    
+    .weblogo > h1 {
+        position: absolute;
+        z-index: 1;
+        margin-top: 3rem;
+        top: 0;
+        left: 0;
+        color: $color-dark-grey;
+        font-size: 3rem;
+      }
+    .menu-wrap{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        .navbarlinks > a {
+            text-decoration: none;
+            color: $color-dark-grey;
+            margin: 3rem;
+            font-size: 2rem;
+            font-weight: 500;
+          }
+        .marketing-button {
+            margin: 3rem;
+            outline: none;
+            display: inline-block;
+            padding: 1.0625em 1.875em;
+            border-radius: .5rem;
+            font-weight: 700;
+            font-size: 1.5rem;
+            line-height: 1.133;
+            text-align: center;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            box-shadow: 0 .5rem 1.5rem 0 rgba(0,0,0,0.15);
+            background-color: #5c6ac4;
+            color: $color-dark-grey;
+            border-width: 0;
+            border-style: solid;
+            border-color: transparent;
+          }
+      }
+  }
+  .header-message {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backface-visibility: hidden;
+    text-align: center;
+    h1 {
+        color: $color-dark-grey;
+        font-size: 7rem;
+        font-weight: 500;
+        line-height: 1.2;
+        text-align: center;
+        animation-name: headerMoveinLeft 2s ease-out;
+      }
+    p {
+        color: $color-dark-grey;
+        margin-top: 4%;
+        font-size: 1.9rem;
+        line-height: 1.2;
+        text-align: center;
+        animation-name: headerMoveinRight 2s ease-out;
+        margin-bottom: 20%;
+    }
+    .btn {
+        color: $color-dark-grey;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 2rem;
+        font-weight: 500;
+        backface-visibility: hidden;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+        &#move-down-icon {
+            animation: iconMoveDown linear infinite;
+            animation-duration: 1s;
+          }
+    }
+  } 
+  
+  @media screen and (max-width: 702px) {
+    .header-message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .header-message > h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      line-height: 1.2;
+      text-align: center;
+    }
+  }

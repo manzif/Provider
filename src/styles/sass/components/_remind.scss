@@ -1,0 +1,24 @@
+
+.remind-container{
+    padding-right: 15%;
+    padding-left: 7%;
+}
+.remind-container {
+    text-align: right;
+    padding-top: 4%;
+  }
+  .remind-container .back-top {
+    color: black;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 500;
+    transition: all .2s;
+    display: inline-block;
+  }
+  .back-top:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+  .remind-container .back-top:hover #move-up-icon {
+    transform: translateY(-.3rem);
+}
