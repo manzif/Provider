@@ -1,0 +1,24 @@
+
+.heading-primary {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to left, rgba($color-primary, 0.8), rgba(5, 40, 80, 0.8));
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+
+    &:hover {
+        // transform: skewY(2deg) skewX(2deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-primary, .4);
+    }
+}
+.heading-tertiary {
+    font-size: $default-font-size;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.heading-tertiary-tools {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

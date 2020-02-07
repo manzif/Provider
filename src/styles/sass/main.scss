@@ -1,16 +1,20 @@
 
-@import "base/animations";
-
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
+@import "base/animations";
 @import "base/base";
+@import "base/utilities";
+@import "base/typography";
 
 @import "layouts/landingContainer";
+@import "layouts/grid";
 
 @import "components/footer";
 @import "components/about";
 @import "components/header";
 @import "components/partner";
 @import "components/programming";
-@import "components/remind"
+@import "components/remind";
+@import "components/language-box"
   
