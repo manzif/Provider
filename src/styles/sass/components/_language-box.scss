@@ -1,6 +1,5 @@
 
 .language-box {
-    // background-color: $color-grey-light-1;
     font-size: 1.5rem;
     padding: 2.5rem;
     text-align: center;
@@ -8,6 +7,10 @@
     box-shadow: 0 1.5rem 4rem rgba($color-primary, .15);
     transition: all .3s;
 
+    @include respond(tablet-portrait) {  
+        padding: 2rem;
+    }
+    
     &__icon {
         font-size: 7rem;
         margin-bottom: .5rem;
@@ -24,6 +27,10 @@
         &.icon-css {
             color: #563d7c;
         }
+        @include respond(tablet-portrait) {  
+            margin-bottom: 0;
+            font-size: 5rem;
+        }
     }
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
@@ -37,32 +44,10 @@
     font-size: 1.5rem;
     text-align: center;
     transition: all .3s;
+    margin-bottom: 3rem;
 
      &__icon {
         font-size: 3rem;
-        margin-bottom: .5rem;
+        margin-bottom: 0;
     }
 }
-// .btn-text {
-//     &:link,
-//     &:visited {
-//         font-size: 1.8rem;
-//         color: rgba(5, 40, 80, 0.8);
-//         display: inline-block;
-//         text-decoration: none;
-//         border-bottom: .1rem solid rgba(5, 40, 80, 0.8);
-//         padding: .3rem;
-//         margin-top: 2rem;
-//         margin-left: 6%;
-//     }
-//     &:hover {
-//         background-image: linear-gradient(to left, rgba($color-primary, 0.8), rgba(5, 40, 80, 0.8));
-//         color: $color-white;
-//         box-shadow: 0 1rem 2rem rgba($color-primary, .15);
-//         transform: translateY(-.2rem);
-//     }
-//     &:active {
-//         box-shadow: 0 .5rem 1rem rgba($color-primary, .15);
-//         transform: translateY(0);
-//     }
-// }

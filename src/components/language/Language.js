@@ -7,7 +7,8 @@ import { DiJavascript1, DiRedis, DiNodejs, DiPostgresql, DiMongodb } from 'react
 const Language = () => {
   return (
     <>
-    <div className="section-language">
+    <div className="programming-language">
+    <div className="section-language" id="language">
         <div className="u-center-text">
           <h2 className="heading-primary">
             Programming Languages and Tools
@@ -20,7 +21,7 @@ const Language = () => {
                 <DiJavascript1 className="language-box__icon icon-javascript"></DiJavascript1>
                 <h3 className="heading-tertiary u-margin-bottom-small">Javascript</h3>
                 <p className="language-box__text">
-                  lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.I had to describe my coding courses in one sentence, I would say These are exactly the courses.
+                I have been using javascript for more than 3 years. I am capable of working with different frameworks like Node.js and React. I have also worked with different testing tools.
                 </p>
               </div>
             </div>
@@ -29,7 +30,7 @@ const Language = () => {
                 <FaPython className="language-box__icon icon-python"></FaPython>
                 <h3 className="heading-tertiary u-margin-bottom-small">Python</h3>
                 <p className="language-box__text">
-                  lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.I had to describe my coding courses in one sentence, I would say These are exactly the courses.
+                This is my newly adopted programming language. I have 1-2 years of experience in Python. I have worked with the Django framework and python flask. I have worked with Pytest too.
                 </p>
               </div>
             </div>
@@ -38,7 +39,7 @@ const Language = () => {
                 <FaHtml5 className="language-box__icon icon-html"></FaHtml5>
                 <h3 className="heading-tertiary u-margin-bottom-small">Html</h3>
                 <p className="language-box__text">
-                  lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.I had to describe my coding courses in one sentence, I would say These are exactly the courses.
+                Html is the most basic building block of the Web. Because it defines the meaning and structure of the web content. I have been using it for 4-5years with more than 20 projects. 
                 </p>
               </div>
             </div>
@@ -47,7 +48,7 @@ const Language = () => {
                 <FaCss3Alt className="language-box__icon icon-css"></FaCss3Alt>
                 <h3 className="heading-tertiary u-margin-bottom-small">Css</h3>
                 <p className="language-box__text">
-                  lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit.I had to describe my coding courses in one sentence, I would say These are exactly the courses.
+                  Like Html, I have experience of  4-5 years using CSS. I can work with Sass, bootstrap, semantic-UI, and Material-UI.
                 </p>
               </div>
             </div>
@@ -105,10 +106,12 @@ const Language = () => {
               </div>
           </div>
         </div>
-        {/* <a href="price" class="btn-text">more tools &rarr;</a> */}
+          <div className="more-tools">
           <a href="/pricing" className="about-slide-right">More tools
           <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i></span>
           </a>
+          </div>
+    </div>
     </div>
     </>
   );

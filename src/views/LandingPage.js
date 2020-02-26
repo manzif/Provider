@@ -3,20 +3,15 @@ import Bio from "../components/about/About"
 import Footer from "../components/common/footer/footer"
 import Header from "../components/common/header/Header"
 import Language from "../components/language/Language"
-import Contact from "../components/contact/Contact"
-import Remind from "../components/Remind/Remind"
 
 export class HomePage extends Component {
-
   render() {
       return (
         <>
-        <div className="landingContainer">
+        <div className="landing-container">
             <div className="header"> <Header></Header> </div>
             <div className="programming-language"> <Language></Language> </div>
             <div> <Bio></Bio> </div>
-            <div className="partnerbro"> <Contact></Contact> </div>
-            <div> <Remind></Remind> </div>
             <div className="footer"> <Footer></Footer> </div>
         </div>
         </>

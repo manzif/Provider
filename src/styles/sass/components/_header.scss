@@ -12,11 +12,14 @@
     .weblogo > h1 {
         position: absolute;
         z-index: 1;
-        margin-top: 3rem;
+        margin-top: 5rem;
         top: 0;
         left: 0;
         color: $color-dark-grey;
         font-size: 3rem;
+        font-family: Comic;
+        font-style: italic;
+        font-weight: 100;
       }
     .menu-wrap{
         position: absolute;
@@ -29,9 +32,14 @@
             margin: 3rem;
             font-size: 2rem;
             font-weight: 500;
+            cursor: pointer;
+
+            @include respond(phone) {  
+              display: none;
+            }
           }
         .marketing-button {
-            margin: 3rem;
+            margin: 4rem;
             outline: none;
             display: inline-block;
             padding: 1.0625em 1.875em;
@@ -57,11 +65,12 @@
   }
   .header-message {
     position: absolute;
-    top: 60%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
     text-align: center;
+
     h1 {
         color: $color-dark-grey;
         font-size: 7rem;
@@ -69,6 +78,11 @@
         line-height: 1.2;
         text-align: center;
         animation-name: headerMoveinLeft 2s ease-out;
+
+        @include respond(phone) { 
+          line-height: 1;
+          font-size: 5rem;
+      }
       }
     p {
         color: $color-dark-grey;
@@ -95,21 +109,20 @@
         &#move-down-icon {
             animation: iconMoveDown linear infinite;
             animation-duration: 1s;
-          }
+        }
     }
-  } 
-  
-  @media screen and (max-width: 702px) {
-    .header-message {
-      position: absolute;
+    
+    @include respond(tablet-landscape) { 
+      top: 70%;
+      left: 50%;
+    }
+    @include respond(tablet-portrait) { 
+      top: 60%;
+      left: 50%;
+    }
+    @include respond(phone) { 
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
     }
-    .header-message > h1 {
-      font-size: 4rem;
-      font-weight: 500;
-      line-height: 1.2;
-      text-align: center;
-    }
-  }
+
+  } 
