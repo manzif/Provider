@@ -1,5 +1,13 @@
 
-.landingContainer{
+.landing-container {
     display: grid;
-    grid-template-rows: 3fr 3fr 3fr 3fr .5fr .5fr;
+    grid-template-rows: 2fr 2fr 2.4fr 1fr;
+    
+    @include respond(tablet-portrait) {
+        grid-template-rows: 1fr 1.8fr 1fr .3fr;
+    }
+    @include respond(phone) { 
+        grid-template-rows: .8fr 1.6fr 1fr .4fr;
+    }
 }
+

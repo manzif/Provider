@@ -1,78 +1,98 @@
 
-.footer{
-    // background-color: $color-dark-blue;
-    background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.8), rgba(5, 40, 80, 0.8)), url("../assets/image12.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-    /* background-color: black; */
-    padding-left: 15%;
-    padding-right: 15%;
-    /* background-color: #dedede; */
-}
-.footer-container {
-    position: relative;
-    margin-top: 5%;
-    color: $color-dark-grey;
-  }
-  .footer-container li {
-    font-size: 2rem;
-    list-style: none;
-  }
-  .footer-container li > i {
-    margin-right: 1%;
-  }
-  .footer-container li:nth-child(1) {
-    float: right;
-  }
-  .footer-container ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  .footer-container > ul > li {
-    list-style: none;
-  }
-  .footer-container > ul > li > a {
-    position: relative;
-    width: 6rem;
-    height: 6rem;
-    display: block;
+
+.footer {
+  padding-left: 7%;
+  padding-right: 7%;
+  color: $color-dark-blue;
+
+  &__logo-box {
     text-align: center;
-    margin: 0 1rem;
-    border-radius: 50%;
-    padding: .6rem;
-    box-sizing: border-box;
-    text-decoration: none;
-    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
-    background: linear-gradient(0deg, #ddd, #fff);
-    transition: .5s;
-    /* font-size: 3rem; */
+    font-size: 1.5rem;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-family: Comic;
+    font-style: italic;
+    font-weight: 100;
+    @include respond(tablet-portrait) {  
+      margin-bottom: 4rem;
   }
-  .footer-container > ul > li > a:hover {
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, 0.3); 
   }
-  .footer-container > ul > li > a .fa {
-    width: 100%;
-    width: 100%;
-    display: block;
-    background: linear-gradient(0deg, #fff, #ddd);
-    border-radius: 50%;
-    line-height: calc(6rem - 1.2rem);
-    font-size: 2.4rem;
-    color: $color-dark-blue;
-    transition: .5s;
+  &__navigation {
+    border-top: 1px solid $color-dark-blue;
+    padding-top: 1rem;
+
+    @include respond(tablet-portrait) { 
+      width: 100%;
+      text-align: center;
+    }
   }
-  .footer-container > ul > li:nth-child(1) a:hover .fa {
-    color: #007bb5;
+  &__list {
+    list-style: none;
   }
-  .footer-container > ul > li:nth-child(2) a:hover .fa {
-    color: #1da1f2;
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+        margin-right: 1.5rem;
+    }
   }
-  .footer-container > ul > li:nth-child(3) a:hover .fa {
-    color: #c32aa3;
-  }
-  
+  &__link {
+      position: relative;
+      width: 6rem;
+      height: 6rem;
+      display: block;
+      text-align: center;
+      margin: 0 1rem;
+      border-radius: 50%;
+      padding: .6rem;
+      box-sizing: border-box;
+      text-decoration: none;
+      box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.3);
+      background: linear-gradient(0deg, #ddd, #fff);
+      transition: .5s;
+
+        &:hover {
+          box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.3); 
+        }
+        &:hover #link-1 {
+          color: #007bb5;
+        }
+        &:hover #link-2 {
+          color: #1da1f2;
+        }
+        &:hover #link-3 {
+          color: #c32aa3;
+        }
+        &:hover #link-4 {
+          color: $color-dark-blue;
+        }
+        i {
+              width: 100%;
+              width: 100%;
+              display: block;
+              background: linear-gradient(0deg, #fff, #ddd);
+              border-radius: 50%;
+              line-height: calc(6rem - 1.2rem);
+              font-size: 2.4rem;
+              color: $color-dark-blue;
+              transition: .5s;
+        }
+        @include respond(phone) { 
+          margin-bottom: .5rem;
+        }
+    }
+    &__email {
+      border-top: 1px solid $color-dark-blue;
+      padding-top: 2rem;
+      width: 80%;
+      float: right;
+      font-size: 2rem;
+        i {
+          margin-right: .5rem;
+        }
+        @include respond(tablet-portrait) {  
+          width: 100%;
+          float: none;
+          text-align: center;
+      }
+    }
+}

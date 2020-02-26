@@ -7,7 +7,14 @@
 }
 .u-margin-bottom-medium {
     margin-bottom: 4rem;
+
+    @include respond(tablet-portrait) {  
+        margin-bottom: 3rem !important;
+    } 
 }
 .u-margin-bottom-big {
     margin-bottom: 8rem;
+    @include respond(tablet-portrait) {  
+        margin-bottom: 5rem !important;
+    } 
 }
