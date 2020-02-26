@@ -1,24 +1,12 @@
 
 .footer {
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 11%;
+  padding-right: 10%;
   color: $color-dark-blue;
+  background-color:$color-white;
+  padding-bottom: 2rem;
 
-  &__logo-box {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: 10rem;
-    margin-bottom: 5rem;
-    font-family: Comic;
-    font-style: italic;
-    font-weight: 100;
-    @include respond(tablet-portrait) {  
-      margin-bottom: 4rem;
-  }
-  }
   &__navigation {
-    border-top: 1px solid $color-dark-blue;
-    padding-top: 1rem;
 
     @include respond(tablet-portrait) { 
       width: 100%;
@@ -80,8 +68,7 @@
         }
     }
     &__email {
-      border-top: 1px solid $color-dark-blue;
-      padding-top: 2rem;
+      padding-top: 1.5rem;
       width: 80%;
       float: right;
       font-size: 2rem;

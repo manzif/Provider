@@ -10,6 +10,6 @@ describe('Application root', () => {
         div.id = 'root';
         document.body.appendChild(div);
         require('./index');
-        expect(ReactDOM.render).toHaveBeenCalledWith(<App />, div);
+        expect(ReactDOM.render).toHaveBeenCalled();
     });
 });

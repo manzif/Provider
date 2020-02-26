@@ -1,0 +1,81 @@
+
+.project{
+    padding: 0 $grid-padding-left-right-big 0;
+    margin-top: 4rem;
+    z-index: 100;
+    .row {
+        .col-1-of-2 {
+
+            .project-content-inner {
+                
+
+                h1 {
+                    font-weight: 400;
+                    font-size: 3.2rem;
+                    margin-bottom: 2.4rem;
+
+                    .project-content-line {
+                        margin: 0;
+                        height: 4.4rem;
+                        overflow: hidden;
+
+                }
+                }
+                p {
+                    font-size: $default-font-size;
+                    line-height: 2.4rem;
+                    font-weight: 300;
+                    padding-right: 4.8rem;
+                    margin-bottom: 5.6rem;
+                }
+                .btn-row {
+                    font-size: 2rem;
+                    font-weight: 500;
+                
+                    &:hover {
+                        text-decoration: underline;
+                        text-underline-position: under;
+                            
+                        & i {
+                            transform: translateX(.3rem);
+                        }
+                    }
+            }
+        }
+    }
+    .composition {
+       position: relative;
+
+        &:hover &__link:not(:hover) {
+            transform: scale(.3);
+        }
+        &__link {
+            box-shadow: 0 1.5rem 5rem rgba($color-secondary, .4);
+            border-radius: 3px;
+            position: absolute;
+            outline-offset: .5rem;
+
+            &--1 {
+                width: 55%;
+                height: 20rem;
+                top: 0;
+                right: 0;
+            }
+            &--2 {
+                width: 55%;
+                height: 28rem;
+                left: 0;
+                top: 10rem;
+
+            }
+            &:hover {
+                outline: .5rem solid $color-dark-blue;
+                transform: scale(1.05);
+                z-index: 30;
+                box-shadow: 0 2.5rem 5rem rgba($color-secondary, .5);
+            }
+        }
+    }
+}
+
+}

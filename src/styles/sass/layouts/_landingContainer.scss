@@ -1,13 +1,13 @@
 
 .landing-container {
     display: grid;
-    grid-template-rows: 2fr 2fr 2.4fr 1fr;
+    grid-template-rows: 100vh 100vh  70vh repeat(3, min-content);
     
     @include respond(tablet-portrait) {
-        grid-template-rows: 1fr 1.8fr 1fr .3fr;
+        grid-template-rows: 100vh repeat(5, min-content);
     }
     @include respond(phone) { 
-        grid-template-rows: .8fr 1.6fr 1fr .4fr;
+        grid-template-rows: 100vh min-content 100vh repeat(2, min-content);
     }
 }
 

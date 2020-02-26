@@ -7,7 +7,6 @@
     background-size: cover;
     background-attachment: fixed;
     overflow: auto;
-
   }
   
   .aboutContainer .about-profile > img {
@@ -46,7 +45,7 @@
     font-family: Comic sans Ms;
     font-style: italic;
     font-weight: 100;
-    margin-bottom: 8%;
+    margin-bottom: 7%;
     color: $color-dark-grey;
   }
   
@@ -59,7 +58,7 @@
     color: $color-dark-grey;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     text-align: right;
   }
   .aboutContainer .about-text .about-slide-right:hover {

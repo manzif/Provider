@@ -2,6 +2,7 @@ import React from "react";
 import Image7 from "../../assets/pp.jpeg"
 
 const About = () => {
+ 
   return (
     <div className="aboutContainer" id="about">
       <div className="about-profile">

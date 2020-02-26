@@ -3,12 +3,14 @@ import { FaPython, FaCss3Alt, FaHtml5,
    FaReact, FaFlask, FaDocker,
     FaSass} from 'react-icons/fa';
 import { DiJavascript1, DiRedis, DiNodejs, DiPostgresql, DiMongodb } from 'react-icons/di';
+import Popup from "reactjs-popup";
+import Moretools from "../../views/Moretools"
 
 const Language = () => {
   return (
     <>
     <div className="programming-language">
-    <div className="section-language" id="language">
+    <div className="section-language">  
         <div className="u-center-text">
           <h2 className="heading-primary">
             Programming Languages and Tools
@@ -16,7 +18,7 @@ const Language = () => {
         </div>
         <div className="languages-container">
           <div className="row">
-            <div className="col-1-of-4">
+            <div className="col-1-of-4" data-aos="fade-up-right">
               <div className="language-box">
                 <DiJavascript1 className="language-box__icon icon-javascript"></DiJavascript1>
                 <h3 className="heading-tertiary u-margin-bottom-small">Javascript</h3>
@@ -43,7 +45,7 @@ const Language = () => {
                 </p>
               </div>
             </div>
-            <div className="col-1-of-4">
+            <div className="col-1-of-4" data-aos="fade-up-left">
               <div className="language-box">
                 <FaCss3Alt className="language-box__icon icon-css"></FaCss3Alt>
                 <h3 className="heading-tertiary u-margin-bottom-small">Css</h3>
@@ -107,9 +109,11 @@ const Language = () => {
           </div>
         </div>
           <div className="more-tools">
-          <a href="/pricing" className="about-slide-right">More tools
-          <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i></span>
-          </a>
+              <Popup trigger={<button className="more-tools-button">More tools
+              <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i></span>
+              </button>}>
+                <Moretools></Moretools>
+              </Popup>
           </div>
     </div>
     </div>

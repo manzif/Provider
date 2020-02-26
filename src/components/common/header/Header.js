@@ -3,7 +3,7 @@ import { Link } from "react-scroll"
 import Popup from "reactjs-popup";
 import Getincontact from "../../../views/Getincontact"
 
-const Header = () => {
+const Header = () => {    
   return (
         <>
         <div id="header-top">
@@ -12,7 +12,16 @@ const Header = () => {
           </div>
           <div className="menu-wrap">
             <div className="navbarlinks">
-                <a href="/">Home</a>
+                <Link activeClass="active"
+                    to="header-top"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={0}
+                    duration={1000}
+                >
+                Home
+                </Link>
                 <Link activeClass="active"
                     to="language"
                     spy={true}
@@ -22,6 +31,16 @@ const Header = () => {
                     duration={1000}
                 >
                 Language
+                </Link>
+                <Link activeClass="active"
+                    to="project"
+                    spy={true}
+                    smooth={true}
+                    hashSpy={true}
+                    offset={0}
+                    duration={2000}
+                >
+                Portfolio
                 </Link>
                 <Link activeClass="active"
                     to="about"

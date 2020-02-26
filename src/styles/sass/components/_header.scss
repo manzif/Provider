@@ -4,8 +4,9 @@
     background-image: linear-gradient(to right bottom, rgba($color-secondary, 0.8), rgba(5, 40, 80, 0.8)), url("../assets/image11.jpg");
     background-size: cover;
     background-position: bottom;
-    overflow: auto;
+    z-index: 1;
   }
+
   #header-top{
     position: relative;
     
@@ -25,11 +26,11 @@
         position: absolute;
         top: 0;
         right: 0;
-        z-index: 1;
+      
         .navbarlinks > a {
             text-decoration: none;
             color: $color-dark-grey;
-            margin: 3rem;
+            margin: 2rem;
             font-size: 2rem;
             font-weight: 500;
             cursor: pointer;
@@ -70,6 +71,8 @@
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
     text-align: center;
+    z-index: 1;
+    
 
     h1 {
         color: $color-dark-grey;
@@ -77,11 +80,12 @@
         font-weight: 500;
         line-height: 1.2;
         text-align: center;
+        z-index: 1;
         animation-name: headerMoveinLeft 2s ease-out;
 
         @include respond(phone) { 
           line-height: 1;
-          font-size: 5rem;
+          font-size: 4rem;
       }
       }
     p {
@@ -89,9 +93,15 @@
         margin-top: 4%;
         font-size: 1.9rem;
         line-height: 1.2;
+        z-index: 1;
         text-align: center;
         animation-name: headerMoveinRight 2s ease-out;
         margin-bottom: 20%;
+
+        @include respond(phone) { 
+          margin-top: 16%;
+          // margin-bottom: 20%;
+      }
     }
     .btn {
         color: $color-dark-grey;
@@ -99,6 +109,7 @@
         display: inline-block;
         cursor: pointer;
         font-size: 2rem;
+        z-index: 1;
         font-weight: 500;
         backface-visibility: hidden;
 
@@ -110,6 +121,7 @@
             animation: iconMoveDown linear infinite;
             animation-duration: 1s;
         }
+        
     }
     
     @include respond(tablet-landscape) { 
@@ -121,7 +133,8 @@
       left: 50%;
     }
     @include respond(phone) { 
-      top: 50%;
+
+      top: 65%;
       left: 50%;
     }
 
