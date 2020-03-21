@@ -1,0 +1,27 @@
+
+.remind {
+    text-align: right;
+    padding-right: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    & a {
+        font-size: 1.9rem;
+        font-weight: 500;
+        text-decoration: none;
+        color: $color-primary;
+        
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+            text-underline-position: under;
+
+            & i {
+                transform: translateY(-.3rem);
+            }
+        }
+    }
+    @include respond(phone) { 
+        text-align: center;
+      }
+}
