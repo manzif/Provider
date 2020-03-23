@@ -1,7 +1,7 @@
 
 .landing-container {
     display: grid;
-    grid-template-rows: 100vh 100vh  70vh repeat(3, min-content);
+    grid-template-rows: 100vh 100vh  60vh repeat(3, min-content);
     
     @include respond(tablet-portrait) {
         grid-template-rows: 100vh repeat(5, min-content);

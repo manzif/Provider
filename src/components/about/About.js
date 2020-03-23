@@ -17,7 +17,7 @@ const About = () => {
         <br></br>
         <p>I have 2 certificates from the CISCO networking academy for IT essential and CCNA routing and switching.</p>
         <br></br>
-        <p>I appreciate you taking the time to learn about me, and you can get in with me by the link below. Thanks.</p>
+        <p>I appreciate you taking the time to learn about me, and you can get in contact with me by the link below. Thanks.</p>
         </div>
         <h1>Manzi Fabrice</h1>
         <div id="move-right-contact">
