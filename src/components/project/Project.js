@@ -16,7 +16,7 @@ const Project = () => {
                                         <div className="project-content-line-inner">I have worked on</div>
                                     </div>
                                 </h1>
-                                <p>lorem   or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.</p>
+                                <p>This part consists of 2 of the latest projects I have worked on. As Bang Gae said ''Teamwork makes the dream work''. Some of these projects I was in a team that built them. If you want more projects, please get in contact with me. I will send them to you. </p>
                                 <div className="btn-row">Explore
                                     <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i></span>
                                 </div>
