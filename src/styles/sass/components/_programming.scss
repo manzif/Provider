@@ -32,6 +32,9 @@
                         transform: translateX(.3rem);
                     }
                 }
+                @include respond(phone) {  
+                    background-color: white;
+                }
             }
 
         }
