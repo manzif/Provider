@@ -18,7 +18,7 @@ const Project = () => {
                                 </h1>
                                 <p>This part consists of 2 of the latest projects I have worked on. As Bang Gae said ''Teamwork makes the dream work''. Some of these projects I was in a team that built them. If you want more projects, please get in contact with me. I will send them to you. </p>
                                 <div className="btn-row">Explore
-                                    <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i></span>
+                                    <span> <i className="fa fa-arrow-circle-right fa" id="move-right-icon"></i> </span><span> <i className="fa fa-arrow-circle-down fa" id="move-right-down"></i></span>
                                 </div>
                         </div>
                     </div>

@@ -153,6 +153,9 @@ html {
   color: #212b35;
   background-color: #ffffff;
   padding-bottom: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .footer {
+      padding-left: 10%; } }
   @media only screen and (max-width: 56.25em) {
     .footer__navigation {
       width: 100%;
@@ -163,6 +166,9 @@ html {
     display: inline-block; }
     .footer__item:not(:last-child) {
       margin-right: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .footer__item {
+        margin-right: 1.5rem; } }
   .footer__link {
     position: relative;
     width: 6rem;
@@ -212,6 +218,9 @@ html {
         width: 100%;
         float: none;
         text-align: center; } }
+    @media only screen and (max-width: 37.5em) {
+      .footer__email {
+        padding-top: 0; } }
 
 .aboutContainer {
   position: relative;
@@ -221,6 +230,9 @@ html {
   background-size: cover;
   background-attachment: fixed;
   overflow: auto; }
+  @media only screen and (max-width: 37.5em) {
+    .aboutContainer {
+      padding: 0 5% 0; } }
 
 .aboutContainer .about-profile > img {
   display: inline-block;
@@ -242,6 +254,10 @@ html {
   text-align: left;
   padding-right: 17%;
   padding-left: 17%; }
+  @media only screen and (max-width: 37.5em) {
+    .aboutContainer .about-text {
+      padding-right: 10%;
+      padding-left: 10%; } }
 
 .aboutContainer .about-text .about-text-paragraph {
   margin-bottom: 6%; }
@@ -275,6 +291,10 @@ html {
 .aboutContainer .about-text .about-slide-right:hover {
   text-decoration: underline;
   text-underline-position: under; }
+  @media only screen and (max-width: 37.5em) {
+    .aboutContainer .about-text .about-slide-right:hover {
+      text-decoration: none;
+      text-underline-position: none; } }
 
 .aboutContainer .about-text .about-slide-right:hover #move-right-icon {
   transform: translateX(0.3rem); }
@@ -422,6 +442,9 @@ html {
           text-underline-position: under; }
           .programming-language .section-language .more-tools button:hover i {
             transform: translateX(0.3rem); }
+        @media only screen and (max-width: 37.5em) {
+          .programming-language .section-language .more-tools button {
+            background-color: white; } }
   .programming-language .languages-container {
     padding: 10rem 0; }
 
@@ -666,6 +689,18 @@ html {
       text-underline-position: under; }
       .project .row .col-1-of-2 .project-content-inner .btn-row:hover i {
         transform: translateX(0.3rem); }
+      @media only screen and (max-width: 37.5em) {
+        .project .row .col-1-of-2 .project-content-inner .btn-row:hover {
+          text-decoration: none;
+          text-underline-position: none; } }
+    .project .row .col-1-of-2 .project-content-inner .btn-row span:nth-child(2) {
+      display: none; }
+      @media only screen and (max-width: 37.5em) {
+        .project .row .col-1-of-2 .project-content-inner .btn-row span:nth-child(2) {
+          display: inline; } }
+    @media only screen and (max-width: 37.5em) {
+      .project .row .col-1-of-2 .project-content-inner .btn-row span:first-child {
+        display: none; } }
   .project .row .composition {
     position: relative; }
     .project .row .composition:hover .project .row .composition__link:not(:hover) {
@@ -705,6 +740,10 @@ html {
       text-underline-position: under; }
       .remind a:hover i {
         transform: translateY(-0.3rem); }
+      @media only screen and (max-width: 37.5em) {
+        .remind a:hover {
+          text-decoration: none;
+          text-underline-position: none; } }
   @media only screen and (max-width: 37.5em) {
     .remind {
       text-align: center; } }

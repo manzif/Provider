@@ -19,6 +19,10 @@
             & i {
                 transform: translateY(-.3rem);
             }
+            @include respond(phone) { 
+                text-decoration: none;
+                text-underline-position: none;
+            }
         }
     }
     @include respond(phone) { 
